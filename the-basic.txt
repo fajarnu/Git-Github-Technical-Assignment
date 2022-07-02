@@ -1,0 +1,37 @@
+1. Create a folder called git-basic. mkdir git-basic
+2. cd into the git-basic folder. cd git-basic
+3. Create a file called first.txt. touch first.txt
+4. Initialize an empty git repository. git init
+5. Add first.txt to the staging area. git add first.txt
+6. Commit with the message "adding first.txt". git commit -m "adding first.txt"
+7. Check out your commit with git log.
+commit c6f71f2fd21805dbd24090e8ee357fa0d662fc64 (HEAD -> master)
+Author: fajarnu <fajarnu1608@gmail.com>
+Date:   Sat Jul 2 08:54:43 2022 +0700
+
+    adding first.txt
+
+8. Create another file called second.txt. touch second.txt
+9. Add second.txt to the staging area. git add second.txt
+10. Commit with the message "adding second.txt". git commit -m "adding second.txt"
+11. Remove the first.txt file. rm first.txt
+12. Add this change to the staging area. git add .
+13. Commit with the message "removing first.txt". git commit -m "removing first.txt" 
+14. Check out your commits using git log.
+commit b5c04335788ab90cd5fcc64202c4b4fb74dfed2a (HEAD -> master)
+Author: fajarnu <fajarnu1608@gmail.com>
+Date:   Sat Jul 2 09:01:51 2022 +0700
+
+    removing first.txt
+
+commit 57247ee6d896544196af7c3365d7c72b134634bf
+Author: fajarnu <fajarnu1608@gmail.com>
+Date:   Sat Jul 2 08:57:49 2022 +0700
+
+    adding second.txt
+
+commit c6f71f2fd21805dbd24090e8ee357fa0d662fc64
+Author: fajarnu <fajarnu1608@gmail.com>
+Date:   Sat Jul 2 08:54:43 2022 +0700
+
+    adding first
